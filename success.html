@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Success Student</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<!--
+`body` tag options:
+
+  Apply one or more of the following classes to to the body tag
+  to get the desired effect
+
+  * sidebar-collapse
+  * sidebar-mini
+-->
+
+<!-- style -->
+
+<style>
+    .p-con{
+        background-color: white;
+        box-shadow: inset 0px 0px 0px 0px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+        border-radius: 0.55rem;
+        border:  3px solid white;
+
+    }
+</style>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Staff Name</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+   
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          
+               <li class="nav-item">
+                <a href="staff_home.html" class="nav-link">
+                  <i class="nav-icon fas fa-desktop"></i>
+                  <p>Dashborad</p>
+                </a>
+              </li>
+               <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                My Students
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pending.html" class="nav-link">
+                  <i class="far text-warning fa-circle nav-icon"></i>
+                  <p>Pending</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="success.html" class="nav-link">
+                  <i class="far text-success fa-circle nav-icon"></i>
+                  <p>Success</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="add_student.html" class="nav-link">
+              <i class="nav-icon fas fa-plus"></i>
+              <p>Add Student</p>
+            </a>
+          </li>
+
+         
+          <li class="nav-item">
+            <a href="profile.html" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>Profile</p>
+            </a>
+          </li>
+                  
+          <li class="nav-header">Settings</li>
+          <li class="nav-item">
+            <a href="password.html" class="nav-link">
+              <i class="nav-icon far fa-circle text-danger"></i>
+              <p class="text">Change Password</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-warning"></i>
+              <p>Log Out</p>
+            </a>
+          </li>
+        
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0"></h1>
+          </div><!-- /.col -->
+          <!-- /.col -->
+        </div><!-- /.row -->
+
+
+            <!-- container -->
+                <div class="container mt-4 p-con  p-3  ">
+                    <!-- row -->
+                
+                    <div class="row justify-content-center">
+                        <h2>Success Students</h2>
+                        <div class="col-12">
+                            <form action="">
+                          <div class="row justify-content-center">
+                           
+                            <div class="col-md-4  col-sm-10 ">
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Student Info</span>
+                                </div>
+                                <input type="text" placeholder="Name/Phone/Email" class="form-control" >
+                              </div>
+                            </div>
+
+                            <div class="col-md-2 col-sm-10 ">
+                              <div class="form-group">
+                             <select name="" class="form-control" id="">
+                               <option value="">Select Institution</option>
+                             </select>
+                              </div>
+                            </div>
+
+
+                            <div class="col-md-2 col-sm-10">
+                              <div class="form-group">
+                             <select name="" class="form-control" id="">
+                               <option value="">Agent In-Charge</option>
+                             </select>
+                              </div>
+                            </div>
+
+                            
+                            <div class="col-md-2  col-sm-10">
+                              <div class="form-group">
+                             <select name="" class="form-control" id="">
+                               <option value="">Status</option>
+                              
+                             </select>
+                              </div>
+                            </div>
+
+                            <div class="col-md-1  col-sm-8">
+                              <div class="form-group">
+                            <button  class="form-control btn btn-primary"> <i class="fas fa-search"></i></button>
+                              </div>
+                            </div>
+                         
+                          </div>
+                        </form>
+                        </div>
+
+
+                       <div class="col-12">
+
+                         <div class="card">
+                           <div class="card-header ">
+                             <div class="card-tools">
+                               <div class="input-group input-group-sm" style="width: 150px;">
+                                 <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+             
+                                 <div class="input-group-append">
+                                   <button type="submit" class="btn btn-default">
+                                     <i class="fas fa-search"></i>
+                                   </button>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+                           <!-- /.card-header -->
+                           <div class="card-body table-responsive p-0">
+                                <table class="table table-bordered ">
+                                    <thead>
+                                        <tr>
+                                            <th>S/N</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Phone number</th>
+                                            <th>Email</th>
+                                            <th>Course</th>
+                                            <th>Institution</th>
+                                            <th>Student ID</th>
+                                            <th>Date Submited</th>
+                                            <th>Last Date Updated</th>
+                                            <th>Agent</th>
+                                            <th>Staff</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Kolade</td>
+                                            <td>Babarinde</td>
+                                            <td>07063516699</td>
+                                            <td>kollybright@gmail.com</td>
+                                            <td>Computer Science</td>
+                                            <td>OYSCATCH</td>
+                                            <td> <div class="input-group input-group-sm" style="width: 120px;">
+                                             
+                                                <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                            
+                                                <div class="input-group-append">
+                                                  <button type="submit" class="btn btn-primary">
+                                                    Save
+                                                  </button>
+                                                </div>
+                                              </div></td>
+                                            <td>03-03-2021</td>
+                                            <td>03-03-2021</td>
+                                            <td>Floshade</td>
+                                            <td>Deji</td>
+                                            <td>  
+                                              <div class="input-group input-group-sm" style="width: 120px;">
+                                                  <select name="" id="" class="form-control float-right">
+                                                    <option value="">Status</option>
+                                                    <option value="">Document Compeleted</option>
+                                                    <option value="">Incompelete Document</option>
+                                                    <option value="">Application Submitted</option>
+                                                    <option value="">Conditional Offer</option>
+                                                    <option value="">Unconditional Offer</option>
+                                                    <option value="">Initial Deposit</option>
+                                                    <option value="">UCOS Interview</option>
+                                                    <option value="">COS</option>
+                                                    <option value="">Visa Processing</option>
+                                                    <option value="">Visa Rejection</option>
+                                                    <option value="">Visa Issued</option>
+                                                    <option value="">Ticket Booking</option>
+                                                    <option value="">Traveled</option>
+                                                    
+                                                  </select>
+                                              <!-- <input type="text" name="table_search" class="form-control float-right" placeholder="Search"> -->
+                          
+                                              <div class="input-group-append">
+                                                <button type="submit" class="btn btn-primary">
+                                                  Save
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </td>
+                                            <td><a href="#" class="btn "><i class="fas fa-edit"></i> Edit</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                           </div>
+                           <!-- /.card-body --> 
+                            <div class="card-footer clearfix">
+               <ul class="pagination pagination-sm m-0 float-right">
+                   <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                   <li class="page-item"><a class="page-link" href="#">1</a></li>
+                   <li class="page-item"><a class="page-link" href="#">2</a></li>
+                   <li class="page-item"><a class="page-link" href="#">3</a></li>
+                   <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                 </ul>
+               </div>
+
+                         </div>
+                         <!-- /.card -->
+                       </div>
+                     </div>
+                    <!-- /row -->
+
+                </div>
+            <!-- /container -->
+
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+       
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2022 <a href="https://oichub.org">OICHUB</a>.</strong>
+    All rights reserved.
+  
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard3.js"></script>
+
+</body>
+</html>
